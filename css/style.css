@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("cabecalho.css");
+@import url("home.css");
+@import url("sobre-mim.css");
+@import url("tecnologia.css");
+
+:root {
+    /* VARIAVEIS DE FONTES */
+    --fonte-primaria: 'Poppins';
+
+    /* VARIAVEIS DE COR */
+    --cor-primaria: #010122;
+    --cor-secundaria: #402ea3;
+    --cor-terciaria: #d2cdfa;
+    --cor--quartenaria: #5746b9;
+    --cor-branco: #ffffff;
+
+    /* BOX-SHADOW */
+    --box-shadow-link: box-shadow: 0 0 5px #402ea3, 0 0 25px #402ea3, 0 0 50px #402ea3, 0 0 100px #402ea3;
+    --box-shadow-secao: 0 15px 25px rgba(53, 20, 219, 0.7);
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}

@@ -1,0 +1,58 @@
+.container-cabecalho {
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    border-bottom-right-radius: 15px;
+    box-shadow: var(--box-shadow-secao);
+}
+
+.container-cabecalho__logo {
+    text-align: center;
+}
+
+.container-cabecalho__logo__img {
+    width: 70%;
+    padding-top: 0.5em;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 30px;
+    height: 60px;
+    background-image: url(../img/Menu-Aberto-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 0.8em;
+}
+
+.container-cabecalho__lista__btn:checked ~ .container-cabecalho__lista {
+    display: block;
+}
+
+.container-cabecalho__lista__btn {
+    display: none;
+}
+
+.container-cabecalho__lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 40vw;
+}
+
+.container-cabecalho__lista__item {
+    background-color: var(--cor-primaria);
+    padding: 1em;
+}
+
+.container-cabecalho__lista__item__link {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container-cabecalho__lista__item:active {
+    text-decoration: underline;
+}

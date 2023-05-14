@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-tecnologia {
+  margin: 3em 1.5em;
+  box-shadow: var(--box-shadow-secao);
+  border-radius: 25px;
+  padding-bottom: 1.5em;
+}
+
+.container-tecnologia__titulo {
+  padding: 1em;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-shadow: var(--box-shadow-secao);
+}
+
+.swiper-slide {
+  margin-left: 1em;
+}
+
+.swiper-wrapper {
+  padding-right: 20em;
+}
+
+.swiper-contorno {
+  border: 2px solid var(--cor-branco);
+  border-radius: 5%;
+  text-align: center;
+  padding: 1em 0;
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.swiper-contorno:hover {
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: inherit;
+  margin-top: 1.5em;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  background: var(--cor-branco);
+}

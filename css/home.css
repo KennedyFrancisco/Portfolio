@@ -1,0 +1,29 @@
+.container-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-home__container-titulo {
+    font-size: 40px;
+    padding: 1em;
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.container-home__container-titulo h2 {
+    margin-bottom: 0.5em;
+}
+
+#container-home__container-titulo__titulo {
+    margin-bottom: 0;
+    color: var(--cor--quartenaria);
+}
+
+.container-home__img {
+    text-align: center;
+}
+
+.home__img {
+    width: 85%;
+    filter: drop-shadow(var(--box-shadow-secao));
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfólio | Kennedy Francisco</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+	<header class="container-cabecalho">
+		<h1 class="container-cabecalho__logo"><img class="container-cabecalho__logo__img" src="img/Logo.png"
+				alt="Logo portfólio do kennedy francisco"></h1>
+		<nav>
+			<input type="checkbox" id="menu" class="container-cabecalho__lista__btn">
+			<label for="menu">
+				<span class="cabecalho__menu-hamburguer container__image"></span>
+			</label>
+			<ul class="container-cabecalho__lista">
+				<li class="container-cabecalho__lista__item"><a href="" class="container-cabecalho__lista__item__link">home</a>
+				</li>
+				<li class="container-cabecalho__lista__item"><a href="" class="container-cabecalho__lista__item__link">sobre
+						mim</a></li>
+				<li class="container-cabecalho__lista__item"><a href=""
+						class="container-cabecalho__lista__item__link">tecnologias</a></li>
+				<li class="container-cabecalho__lista__item"><a href=""
+						class="container-cabecalho__lista__item__link">projetos</a></li>
+				<li class="container-cabecalho__lista__item"><a href=""
+						class="container-cabecalho__lista__item__link">contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container-home">
+			<div class="container-home__container-titulo">
+				<h2>Olá, sou o Kennedy!</h2>
+				<h2 id="container-home__container-titulo__titulo">Desenvolvedor Front-End.</h2>
+			</div>
+			<div class="container-home__img">
+				<img class="home__img" src="img/developer-front-end-3.png" alt="">
+			</div>
+		</section>
+
+		<section class="container-sobre-mim">
+			<h2 class="container-sobre-mim__titulo">Sobre mim</h2>
+			<img class="container-sobre-mim__img" src="img/sobre-mim.png" alt="foto do Kennedy">
+
+			<div class="container-sobre-mim__texto">
+				<div class="sobre-mim__texto__resumido">
+					<span>Uns dos meus principais objetivos é esta me especializando em front-end, até conseguir me tornar um dos melhores, com as tecnologias existentes, quero poder...</span>
+				</div>
+				<div class="sobre-mim__texto__completo">
+					<p>Uns dos meus principais objetivos é esta me especializando em front-end, até conseguir me
+						tornar um dos melhores, com as tecnologias existentes, quero poder está contribuindo com o
+						meus conhecimentos e habilidades onde poderei está colocando em prova os meus esforços.
+						Desafios não são problemas, prefiro sempre encarar eles de frente. Assim espero poder fazer
+						parte de uma boa empresa, onde ela possa contar comigo para os desafios que vier.</p>
+				</div>
+				<span class="material-symbols-outlined">expand_more</span>
+			</div>
+
+		</section>
+
+		<section class="container-tecnologia">
+			<div class="container-tecnologia__titulo">
+				<h2>Tecnologias</h2>
+			</div>
+			
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="swiper-contorno">
+							<h4>HTML5</h4>
+							<img src="img/html.png" alt="imagem da logo do html5">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="swiper-contorno">
+							<h4>CSS3</h4>
+							<img src="img/css.png" alt="imagem da logo do css3">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="swiper-contorno">
+							<h4>JavaScript</h4>
+							<img src="img/javascript2.png" alt="imagem da logo do javascrip">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="swiper-contorno">
+							<h4>GIT</h4>
+							<img src="img/git.png" alt="imagem da logo do git">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="swiper-contorno">
+							<h4>Figma</h4>
+							<img src="img/figma.png" alt="imagem da logo do figma">
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="swiper-contorno">
+							<h4>PhotoShop</h4>
+							<img src="img/photoshop.png" alt="imagem da logo do photoshop">
+						</div>
+					</div>
+					<div class="swiper-slide"></div>
+
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</section>
+
+	</main>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			slidesPerView: 3,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+			},
+		});
+	</script>
+</body>
+
+</html>
